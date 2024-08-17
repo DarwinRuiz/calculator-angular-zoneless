@@ -1,1 +1,2 @@
-<button [class.is-command]="isCommand()" [class.is-double-size]="isDoubleSize()"><ng-content /></button>
+<button #button [class.is-command]="isCommand()" [class.is-pressed]="isPressed()"
+    (click)="handleClick()"><ng-content /></button>
